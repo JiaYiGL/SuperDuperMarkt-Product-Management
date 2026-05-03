@@ -3,7 +3,7 @@ Dieses Projekt ist eine kurze Lösung für die Coding Challenge zur Verwaltung v
 Es simuliert die tägliche Veränderung von Qualität und Preis sowie die automatische Warnung/Aussortierung minderwertiger Ware.
 
 ## Kernfunktionen:
-*   ** Qualitätsupdates:** Simulation der täglichen Wertänderung.
+*   **Qualitätsupdates:** Simulation der täglichen Wertänderung.
 *   **Dynamische Preisberechnung:** Preisermittlung basierend auf der aktuellen Qualität für die Käse-Produkte ($Grundpreis + 0,10€ \cdot Qualität$).
 *   **Eingangsüberprüfung:** Sicherstellung, dass nur Produkte, die den Qualitätsstandards entsprechen, ins Regal gelangen.
 *   **Wein-logik:** Fixierung des Preises beim Einräumen und Qualitätssteigerung ab einem definierten Stichtag.
