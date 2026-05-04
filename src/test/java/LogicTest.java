@@ -41,6 +41,7 @@ public class LogicTest {
         }
         assertEquals(46, wine.getQuality());
     }
+
     @Test
     @DisplayName("Wein-Preis darf sich nach dem Einräumen nicht ändern")
     void testWinePriceStability() {
