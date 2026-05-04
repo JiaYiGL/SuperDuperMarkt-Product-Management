@@ -19,7 +19,7 @@ public abstract class Product {
     // aktualisiert den Qualitätszutand vom Produkt
     public abstract void update(LocalDate time);
 
-    // genaue Preisberechnung wird im Unterklassen definiert
+    // genaue Preisberechnung wird in Unterklassen definiert
     public abstract double getPrice();
 
     public abstract boolean isBad(LocalDate date);
