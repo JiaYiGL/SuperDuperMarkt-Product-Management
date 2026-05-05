@@ -1,9 +1,17 @@
-import org.example.*;
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.example.Cheese;
+import org.example.Main;
+import org.example.Product;
+import org.example.Wine;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 public class LogicTest {
     private LocalDate today;
@@ -57,8 +65,8 @@ public class LogicTest {
     @Test
     @DisplayName("Ungültige Qualität beim Einräumen sollte abgelehnt werden")
     void testInvalidQualityCheeseInsertion() {
-        Cheese badCheese = new Cheese("Alter Käse", 1.0, 20, today.plusDays(5));
-        Cheese goodCheese = new Cheese("Frischer Käse", 1.0, 50, today.plusDays(5));
+        Cheese badCheese = new Cheese("Alter Käse", 1.0, 20, today.plusDays(50));
+        Cheese goodCheese = new Cheese("Frischer Käse", 1.0, 50, today.plusDays(50));
         Main.einraeumen(regal, badCheese);
         Main.einraeumen(regal, goodCheese);
         assertTrue(regal.contains(goodCheese));
